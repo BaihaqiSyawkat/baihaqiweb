@@ -1,0 +1,56 @@
+<html>
+    <html>
+
+<head>
+    <title>Tugas-13</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+</head>
+
+<body>
+    <div class="w3-container">
+        <img src="pantai.jpeg" alt="pantai" style="height: 50%;width: 100%;">
+    </div>
+
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button" onclick="Menu('Jiheon')">Jiheon</button>
+        <button class="w3-bar-item w3-button" onclick="Menu('Yezi')">Yezi</button>
+        <button class="w3-bar-item w3-button" onclick="Menu('FunnyCat')">FunnyCat</button>
+        <button class="w3-bar-item w3-button" onclick="Menu('Jang-Wonyoung')">Jang-Wonyoung</button>
+    </div>
+    <center>
+    <div id="Jiheon" class="w3-container char w3-animate-fading" style="display: none;">
+        <br>
+        <img src="jiheon.jpeg" alt="jiheon" width="30%">
+        <h2>Jiheon</h2>
+    </div>
+    <div id="Yezi" class="w3-container char w3-animate-bottom" style="display: none;">
+        <img src="yezi.jpeg" alt="Yezi" width="30%">
+        <h2>yezi</h2>
+    </div>
+
+    <div id="FunnyCat" class="w3-container char w3-animate-top" style="display: none;">
+        <img src="loadingcat.jpeg" alt="loadingcat" width="30%">
+        <h2>Cat</h2>
+    </div>
+
+    <div id="Jang-Wonyoung" class="w3-container char w3-animate-zoom" style="display: none;">
+        <img src="Jangwonyoung.jpeg" alt="Jangwonyoung" width="30%">
+        <h2>Jang-Wonyoung</h2>
+    </center>
+    </div>
+
+    <script>
+        function Menu(Karakter) {
+            var i;
+            var x = document.getElementsByClassName("char");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(Karakter).style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
+</html>

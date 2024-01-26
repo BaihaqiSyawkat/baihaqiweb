@@ -1,0 +1,52 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="w3.css">
+
+<div class="w3-container">
+    <h2>Menampilkan Animasi w3 Css</h2>
+</div>
+
+<div class="w3-bar w3-blue w3-card-4">
+    <button class="w3-bar-item w3-button" onclick="openKota('Bandung')">Bandung</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Cirebon')">Cirebon</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Subang')">Subang</button>
+
+<div class="w3-dropdown-hover">
+    <button class="w3-button">Dropdown</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+    <button class="w3-bar-item w3-button" onclick="openKota('Bandung')">Bandung</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Cirebon')">Cirebon</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Subang')">Subang</button>
+ </div>
+    </div>
+</div>
+
+<div id="Bandung" class="w3-container kota" style="display : none">
+    <h2>Bandung</h2>
+    Neng satu Ini Cakep Amayyy!!!
+    <br>
+    <img src="Jangwonyoung.jpeg">
+</div>
+
+<div id="Cirebon" class="w3-container kota" style="display : none">
+    <h2>Cirebon</h2>
+    Cirebon kota udang.
+    <br>
+    <img src="yezi.jpeg">
+</div>
+
+<div id="Subang" class="w3-container kota" style="display : none">
+    <h2>Subang</h2>
+    Subang kota nanas.
+    <img src="jiheon.jpeg">
+</div>
+
+<script>
+    function openKota(namaKota) {
+        var i;
+        var x = document.getElementsByClassName("kota");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(namaKota).style.display = "block";
+    }
+</script>

@@ -1,0 +1,76 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="w3.css">
+
+<div class="w3-container">
+    <h2>Menampilkan Animasi w3 Css</h2>
+</div>
+
+<div class="w3-bar w3-blue w3-card-4">
+    <button class="w3-bar-item w3-button" onclick="openKota('Top')">Top</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Bottom')">Bottom</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Left')">Left</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Right')">Right</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Zoom')">Zoom</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Fading')">Fading</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('Opacity')">Opacity</button>
+</div>
+
+<div id="Top" class="w3-container kota w3-animate-top style="display : none">
+    <h2>Animasi Top</h2>
+    Menampilkan Animasi dari Atas Ke bawah
+    <br>
+    <img src="jiheon.jpeg">
+</div>
+
+<div id="Bottom" class="w3-container kota w3-animate-bottom style="display : none">
+    <h2>Animasi Bottom</h2>
+    Menampilkan Animasi dari Bawah Ke Atas
+    <br>
+    <img src="jiheon.jpeg">
+</div>
+
+<div id="Left" class="w3-container kota w3-animate-left style="display : none">
+    <h2>Animasi Left</h2>
+    Menampilkan Animasi dari Kiri Ke Kanan
+    <br>
+    <img src="jiheon.jpeg">
+</div>
+
+<div id="Right" class="w3-container kota w3-animate-right style="display : none">
+    <h2>Animasi right</h2>
+    Menampilkan Animasi dari Kanan Ke Kiri
+    <br>
+    <img src="jiheon.jpeg">
+</div>
+
+<div id="Zoom" class="w3-container kota w3-animate-zoom style="display : none">
+    <h2>Animasi Zoom</h2>
+    Menampilkan Animasi Zoom
+    <br>
+    <img src="jiheon.jpeg">
+</div>
+
+<div id="Fading" class="w3-container kota w3-animate-fading style="display : none">
+    <h2>Animasi Fading</h2>
+    Menampilkan Animasi Fading
+    <br>
+    <img src="jiheon.jpeg">
+</div>
+
+<div id="Opacity" class="w3-container kota w3-animate-opacity style="display : none">
+    <h2>Animasi Opacity</h2>
+    Menampilkan Animasi Opacity
+    <br>
+    <img src="jiheon.jpeg">
+</div>
+
+<script>
+    function openKota(namaKota) {
+        var i;
+        var x = document.getElementsByClassName("Kota");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(namaKota).style.display = "block";
+    }
+</script>
